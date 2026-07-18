@@ -1,8 +1,6 @@
 # ☁️ DevOps & Cloud Notes
 
-Chào mừng bạn đến với kho lưu trữ ghi chép và hướng dẫn thực hành DevOps & Cloud của tôi. Đây là nơi tôi tổng hợp kiến thức, các bài Lab thực tế và tài liệu triển khai hệ thống (Deployment) trên môi trường Cloud (AWS) cũng như On-Premise/VPS. 
-
-Repository này được xây dựng và thiết kế như một **Portfolio dự án thực tế** để trình bày năng lực thiết kế kiến trúc hệ thống, tự động hóa CI/CD, container hóa và bảo mật hạ tầng mạng.
+Chào mừng bạn đến với kho lưu trữ ghi chép và hướng dẫn thực hành DevOps & Cloud của tôi. Đây là nơi tôi tổng hợp kiến thức mà tôi học được trong quá trình học hỏi làm việc để triển khai hệ thống (Deployment) trên môi trường Cloud (AWS) cũng như On-Premise/VPS. 
 
 ---
 
