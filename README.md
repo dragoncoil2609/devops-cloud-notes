@@ -44,21 +44,5 @@ Kho lưu trữ được cấu trúc một cách khoa học để dễ dàng tra 
 
 ---
 
-## 🎯 Điểm Nhấn Kiến Trúc & Thiết Kế Hệ Thống Trong Các Bài Lab
-
-Các tài liệu triển khai trong repo này không chỉ đơn thuần là các bước cài đặt (tutorial) mà tập trung vào **các phương pháp hay nhất (Best Practices) về vận hành và bảo mật**:
-
-1. **Security-by-Design (Bảo mật nhiều lớp):**
-   * Sử dụng liên kết chéo các Security Group (Security Groups Chaining) để cô lập Database, chỉ cho phép các container ứng dụng được chỉ định truy cập.
-   * Triển khai AWS EC2 Instance Connect Endpoint (EICE) để quản trị viên SSH vào máy chủ riêng tư (Private Subnet) mà không cần phơi bày cổng 22 ra ngoài Internet hoặc dùng Bastion Host tốn kém.
-2. **Serverless & Tối ưu chi phí:**
-   * Triển khai ứng dụng Fargate và Lambda giúp loại bỏ gánh nặng quản lý hạ tầng phần cứng, tự động co giãn theo tải thực tế giúp tiết kiệm chi phí vận hành.
-3. **Phân tách mã nguồn & Cấu hình nhạy cảm:**
-   * Sử dụng AWS Secrets Manager và biến môi trường `.env` tách biệt hoàn toàn thông tin bảo mật (password, API keys, JWT secret) khỏi mã nguồn dự án.
-4. **Không tin tưởng tuyệt đối (Zero Trust):**
-   * Sử dụng WAF (Web Application Firewall) trước CDN CloudFront để ngăn chặn các kiểu tấn công khai thác lỗ hổng bảo mật phổ biến (SQL Injection, XSS...).
-
----
-
 > [!TIP]
 > Tất cả tài liệu trong repo này đã được chuẩn hóa dưới dạng **Template Tổng quát (Generalized Templates)**. Bạn chỉ cần thay thế các biến cấu hình dạng `<PLACEHOLDER>` (như `<VPC_NAME>`, `<RDS_DB_ENDPOINT>`, vv.) là có thể áp dụng ngay cho dự án của mình!
